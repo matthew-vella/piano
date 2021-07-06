@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<title>Error 404 | Matthew Vella</title>
+	<meta name="author" content="Matthew Vella">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="format-detection" content="telephone=no"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./assets/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+	<link rel="stylesheet" href="./fullpage/fullpage.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,700|Playfair+Display:400,400i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./aos/aos.css" />
+	<style>
+		.subtitle a:hover {
+			color: var(--subtext-hover);
+		}
+	</style>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147056657-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-147056657-2');
+	</script>
+
+</head>
+<body>
+	<div class="contact">
+		<div class="contact-box" data-aos="fade-right">
+			<a href="./index#about"><span>Contact</span></a>
+		</div>
+	</div>
+	<div class="icon-box" data-aos="fade-left">
+		<div class="icon" id="facebook">
+			<a href="https://fb.me/vellamatthewmusic" target="_blank"></a>
+		</div>
+		<div class="icon" id="instagram">
+			<a href="https://www.instagram.com/matthewvella_/" target="_blank"></a>
+		</div>
+		<div class="icon" id="twitter">
+			<a href="https://twitter.com/matthewvella_" target="_blank"></a>
+		</div>
+		<div class="icon" id="youtube">
+			<a href="https://www.youtube.com/channel/UCWdzQ_egxYdf_ZvqGWDbyAQ" target="_blank"></a>
+		</div>
+	</div>
+	<div id="fullpage">
+		<div class="section">
+			<div class="content-paragraph">
+				<h1 class="main-title">404</h1>
+				<h1 class="main-title error-message">Page Not Found</h1>
+				<br>
+				<h2 class="subtitle">The page you are looking for doesn't exist or has been moved.<br>Go back, or head over to <a href="./index.html">vellamatthew.com</a> to choose a new direction.</h2>
+			</div>
+			<div class="copyright-notice">
+				<span class="copyright">Copyright 2020 | vellamatthew.com</span>
+			</div>
+		</div>
+	</div>
+	<script src="./fullpage/fullpage.min.js"></script>
+	<script type="text/javascript">
+		new fullpage('#fullpage',{
+		});
+	</script>
+	<script src="./aos/aos.js"></script>
+	<script>
+		window.addEventListener('load', AOS.refresh)
+	    AOS.init({
+  			disable: function() {
+    			var maxWidth = 800;
+    			return window.innerWidth < maxWidth;
+    			}
+    		}
+    	);
+	</script>
+</body>
